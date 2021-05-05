@@ -2,6 +2,12 @@
 <!--
 match_parent: 親要素の幅
 wrap_content: 中身の幅
+
+android:layout_margin: 外側の余白
+android:padding: 内側の余白
+
+android:gravity: 要素の中身を上下左右に寄せる
+android:layout_gravity: 要素自体を親要素に対して上下左右に寄せる
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,16 +17,22 @@ wrap_content: 中身の幅
     android:orientation="vertical">
 
     <Button
+        android:layout_margin="50dp"
+        android:gravity="bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
     <Button
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
     <Button
+        android:paddingBottom="20dp"
+        android:layout_gravity="right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
