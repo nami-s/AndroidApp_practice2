@@ -13,16 +13,16 @@ wrap_content: 中身の幅
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello world hello world" />
+        android:text="@string/hello_world" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
     <Button
