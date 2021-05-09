@@ -15,12 +15,14 @@ android:layout_below: ある要素の下に要素を配置
 android:layout_toRightOf: ある要素の右側に要素を配置
 <TableRow>: 行を表現できる
 android:layout_span: 列の結合
+android:stretchColumns: 特定の列の幅を広げる時に使用
 -->
 
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:stretchColumns="0, 2">
 
     <TableRow
         android:layout_width="wrap_content"
@@ -46,10 +48,7 @@ android:layout_span: 列の結合
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_column="2"
             android:text="1"/>
     </TableRow>
 
