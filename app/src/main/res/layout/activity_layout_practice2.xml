@@ -10,6 +10,8 @@ android:gravity: 要素の中身を上下左右に寄せる
 android:layout_gravity: 要素自体を親要素に対して上下左右に寄せる
 
 android:layout_weight: 要素の幅の割合や、余白を調整するのに使用
+
+android:id: idをつける時に使用（値を@+id/と記述してその後に続けてid名を記述する）
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,18 +20,21 @@ android:layout_weight: 要素の幅の割合や、余白を調整するのに使
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/a"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:text="@string/hello_world" />
+        android:layout_height="wrap_content"
+        android:text="A" />
 
     <Button
+        android:id="@+id/b"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:text="@string/hello_world" />
+        android:layout_height="wrap_content"
+        android:text="B" />
 
     <Button
+        android:id="@+id/c"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:text="@string/hello_world" />
+        android:layout_height="wrap_content"
+        android:text="C" />
 
 </RelativeLayout>
