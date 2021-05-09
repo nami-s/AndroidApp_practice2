@@ -12,28 +12,24 @@ android:layout_gravity: 要素自体を親要素に対して上下左右に寄�
 android:layout_weight: 要素の幅の割合や、余白を調整するのに使用
 -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <Button
-        android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="@string/hello_world" />
 
     <Button
-        android:layout_weight="2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="@string/hello_world" />
 
     <Button
-        android:layout_weight="2"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text="@string/hello_world" />
 
-</LinearLayout>
+</RelativeLayout>
