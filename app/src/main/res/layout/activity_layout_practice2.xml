@@ -13,6 +13,8 @@ android:centerInParent: 要素を上下中央に配置
 android:layout_alignLeft: ある要素の左端に合わせて要素を配置
 android:layout_below: ある要素の下に要素を配置
 android:layout_toRightOf: ある要素の右側に要素を配置
+<TableRow>: 行を表現できる
+android:layout_span: 列の結合
 -->
 
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -30,10 +32,7 @@ android:layout_toRightOf: ある要素の右側に要素を配置
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_span="2"
             android:text="1"/>
     </TableRow>
 
