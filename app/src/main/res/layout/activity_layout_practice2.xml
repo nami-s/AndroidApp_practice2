@@ -15,33 +15,24 @@ android:layout_below: ある要素の下に要素を配置
 android:layout_toRightOf: ある要素の右側に要素を配置
 -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/a"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="A" />
+        android:background="#f8bbd0"/>
 
-    <Button
-        android:id="@+id/b"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/a"
-        android:layout_below="@id/a"
-        android:text="B" />
+        android:background="#f8bbd0"/>
 
-    <Button
-        android:id="@+id/c"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/b"
-        android:layout_toRightOf="@id/b"
-        android:layout_marginLeft="20dp"
-        android:text="C" />
+        android:background="#f8bbd0"/>
 
-</RelativeLayout>
+</FrameLayout>
