@@ -10,6 +10,8 @@ android:layout_gravity: 要素自体を親要素に対して上下左右に寄�
 android:layout_weight: 要素の幅の割合や、余白を調整するのに使用
 android:id: idをつける時に使用（値を@+id/と記述してその後に続けてid名を記述する）
 android:centerInParent: 要素を上下中央に配置
+android:layout_alignLeft: ある要素の左端に合わせて要素を配置
+android:layout_below: ある要素の下に要素を配置
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,6 +30,8 @@ android:centerInParent: 要素を上下中央に配置
         android:id="@+id/b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/a"
+        android:layout_below="@id/a"
         android:text="B" />
 
     <Button
